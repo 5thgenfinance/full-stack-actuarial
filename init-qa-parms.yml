@@ -1,0 +1,23 @@
+# agent.yaml
+
+agent:
+  id: qa_test_agent
+  name: "QA Test Agent"
+  description: "Top-level QA agent with deterministic generation parameters for testing."
+
+  # Core model configuration (example fields; adapt to your framework)
+  llm_provider: openai
+  model: gpt-4.1-mini
+
+  # QA generation parameters
+  temperature: 0.1          # Low randomness for reproducible tests
+  top_p: 0.9                # Conservative nucleus sampling
+  top_k: -1                 # Disabled (use top_p instead)
+  seed: 42                  # Fixed for determinism
+  max_tokens: 512           # Short responses for QA efficiency
+  frequency_penalty: 0.0    # No repetition discouragement
+  presence_penalty: 0.0     # Neutral topic exploration
+  repetition_penalty: 1.0   # No penalty
+  stop:                     # Prevent over-generation
+    - "\n\n"
+    - "END"
