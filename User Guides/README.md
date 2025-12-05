@@ -1,7 +1,3 @@
-# full-stack-actuarial
-This is an open source repo "handout" section for my Full Stack Actuarial session presentation.  https://fullstackactuarial.com
-
-
 # Full Stack Actuarial - User Guides Catalog
 
 Welcome to the Full Stack Actuarial documentation repository. This README serves as a central catalog of all available user guides to help you navigate the documentation and find the resources you need.
